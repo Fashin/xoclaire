@@ -13,11 +13,7 @@
 
   require "../app/container.php";
 
-  $app->get('/', \App\Controllers\PagesController::class . ':connexion');
-
-  $app->get('/dashboard', \App\Controllers\PagesDashboard::class . ':dashboard');
-
-  $app->post('/', \App\Controllers\PagesController::class . ':postConnexion');
+  $app->get('/', \App\Controllers\PagesController::class . ':index');
 
   $app->run();
 
