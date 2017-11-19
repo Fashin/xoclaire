@@ -1,0 +1,16 @@
+{
+    "name": "objectif-solaire/intra",
+    "description": "L'intranet d'objectif solaire",
+    "type": "project",
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": {
+        "App\\": "app/"
+      }
+    },
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "dev-master",
+        "twbs/bootstrap": "^3.3@dev"
+    },
+}

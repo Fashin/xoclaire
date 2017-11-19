@@ -1,0 +1,24 @@
+{% extends 'layout.twig' %}
+
+{% block style %}
+<link rel="stylesheet" href="css/connexion.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="login-container">
+
+  <div class="form-header">
+    <p>Login</p>
+  </div>
+  <form class="form-container" action="#" method="post">
+    <label for="inputLogin">Login</label><br>
+    <input type="text" id="inputLogin" name="login" placeholder="Enter Login" required><br>
+    <label for="inputPassword">Password</label><br>
+    <input type="password" name="psswd" id="inputPassword" placeholder="Password" required><br>
+    <input type="submit" name="send" value="Login">
+  </form>
+
+</div>
+
+{% endblock %}
