@@ -1,0 +1,21 @@
+{% extends 'layout.twig' %}
+
+{% block style %}
+<link rel="stylesheet" href="css/contact.css">
+{% endblock %}
+
+{% block content %}
+{% if flash[0] == 'success' %}
+  <div class='return return-success'>{{ flash[1] }}</div>
+{% endif %}
+{% if flash[0] == 'error' %}
+  <div class='return return-error'>{{ flash[1] }}</div>
+{% endif %}
+  <form class="contact_formulaire" action="#" method="post">
+    <input type="text" name="name" placeholder="Nom et prénom">
+    <input type="mail" name="mail" placeholder="Votre email">
+    <input type="text" name="object" placeholder="Objet">
+    <textarea name="message" placeholder="Laissez votre message" rows="8" cols="80"></textarea>
+    <input type="submit" name="send" value="Envoyé">
+  </form>
+{% endblock %}

@@ -1,1 +1,8 @@
 html, body { margin: 0; padding: 0; }
+.menu ul { display: inline-block; list-style-type: none; position: absolute; top: 30px; }
+.menu ul a { color: #8E8E8E; text-decoration: none; }
+.menu ul a li { display: inline-block; font-size: 26px; margin-left: 15px; }
+.menu ul a li:hover { color: #30ACD4; }
+.return { color: white; text-align: center; width: 60%; height: 40px; margin: 0 0 50px 20%; line-height: 30px; border-radius: 5px; }
+.return-error { background: #CA433B; }
+.return-success { background: #77A248; }

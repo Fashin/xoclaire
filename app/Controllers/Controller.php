@@ -18,6 +18,11 @@
    {
      $this->container->view->render($response, $file, $params);
    }
+
+   public function flash($message, $type = 'success')
+   {
+     return [$type, $message];
+   }
  }
 
  ?>
